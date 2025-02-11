@@ -1,13 +1,19 @@
+<h1> Dice Game </h1>
+
 <% die1 = rand(1..6) %>
+<% die2 = rand(1..6) %>
 
 <p>
  Die 1: <b><%= die1 %></b>
 </p>
 
-<% die2 = rand(1..6) %>
-
 <p>
  Die 2: <b><%= die2 %></b>
+</p>
+
+<p>
+  <img src="/images/dice/<%=die1%>.svg" alt="">
+  <img src="/images/dice/<%=die2%>.svg" alt="">
 </p>
 
 <% total = die1 + die2 %>
@@ -15,3 +21,5 @@
 <p>
   the total is <b><%=total%></b>
 </p>
+
+<p><a href="/dice"</a>Roll Again!</p>
